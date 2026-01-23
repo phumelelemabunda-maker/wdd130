@@ -1,0 +1,46 @@
+/* Limit main width (W02 requirement) */
+main {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+/* Profile image styling */
+main img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Aside styling (W02 requirement) */
+aside {
+    width: 300px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    color: #000
+}
+
+/* Aside image styling */
+aside img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Paragraph fix */
+p {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1rem;
+}
