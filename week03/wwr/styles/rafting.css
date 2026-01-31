@@ -1,11 +1,9 @@
 /* -----------------------------
-   Root Variables (Colors & Fonts)
+   Root Variables
 -------------------------------- */
 :root {
     --primary-color: #0b7285;
-    --secondary-color: #74c0fc;
-    --accent1-color: #102a43;
-    --accent2-color: #e3fafc;
+    --accent-color: #102a43;
 
     --heading-font: Arial, Helvetica, sans-serif;
     --body-font: Verdana, Geneva, sans-serif;
@@ -25,7 +23,7 @@
 -------------------------------- */
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--accent-color);
     background-color: #ffffff;
 }
 
@@ -85,12 +83,10 @@ article {
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
-/* Hero title overlay */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -101,22 +97,19 @@ article {
     color: #ffffff;
 }
 
-/* Article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    width: 70%;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 16px;
-    width: 70%;
 }
 
-/* Article image */
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 16px;
-    border-radius: 4px;
 }
 
 /* -----------------------------
@@ -128,10 +121,6 @@ footer {
     align-items: center;
     padding: 16px;
     border-top: 1px solid #ccc;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .socialmedia img {
