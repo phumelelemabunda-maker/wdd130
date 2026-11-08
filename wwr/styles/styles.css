@@ -1,18 +1,10 @@
+/* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #0b7285;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
+/* Navigation */
 nav {
     background-color: #102a43;
     padding: 10px;
@@ -20,31 +12,58 @@ nav {
 
 nav a {
     color: white;
+    padding: 10px;
+    display: block;
     text-decoration: none;
-    margin: 0 15px;
 }
 
+/* Main content */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
+    max-width: 840px;
+    margin: 1rem auto;
 }
 
-h1,
-h2 {
-    color: #0b7285;
+/* Main heading */
+h1 {
+    color: #102a43;
 }
 
+/* Profile image */
 main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #333;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
+    margin: 10px;
+}
+
+/* Aside section */
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+/* Country image */
+aside img {
     width: 200px;
     height: auto;
 }
 
+/* Paragraphs */
+p {
+    padding: 0;
+}
+
+/* Footer */
 footer {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    background-color: #102a43;
-    color: white;
+    padding: 1rem;
 }

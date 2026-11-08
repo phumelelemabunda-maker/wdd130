@@ -1,0 +1,69 @@
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #102a43;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    max-width: 840px;
+    margin: 1rem auto;
+}
+
+/* Main heading */
+h1 {
+    color: #102a43;
+}
+
+/* Profile image */
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #333;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
+    margin: 10px;
+}
+
+/* Aside section */
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+/* Country image */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Paragraphs */
+p {
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1rem;
+}
