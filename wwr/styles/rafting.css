@@ -1,4 +1,6 @@
-/* Root Variables */
+/* -----------------------------
+   Root Variables (Colors & Fonts)
+-------------------------------- */
 :root {
     --primary-color: #0b7285;
     --secondary-color: #74c0fc;
@@ -9,18 +11,22 @@
     --body-font: Verdana, Geneva, sans-serif;
 }
 
-/* Universal Selector Reset */
+/* -----------------------------
+   Universal Selector Reset
+-------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base Styles */
+/* -----------------------------
+   Base Styles
+-------------------------------- */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #ffffff;
+    background-color: var(--accent2-color);
     line-height: 1.6;
 }
 
@@ -31,12 +37,15 @@ footer {
     margin: 0 auto;
 }
 
-/* Header */
+/* -----------------------------
+   Header
+-------------------------------- */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+    background-color: #ffffff;
 }
 
 header img {
@@ -44,19 +53,24 @@ header img {
     width: auto;
 }
 
-/* Navigation */
+/* -----------------------------
+   Navigation
+-------------------------------- */
 nav a {
     margin: 0 10px;
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 nav a:hover {
     color: var(--accent1-color);
 }
 
-/* Headings */
+/* -----------------------------
+   Headings
+-------------------------------- */
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -68,7 +82,9 @@ h2 {
     margin-bottom: 16px;
 }
 
-/* General Spacing */
+/* -----------------------------
+   General Spacing
+-------------------------------- */
 nav,
 p,
 section,
@@ -77,12 +93,14 @@ article {
     padding: 8px;
 }
 
-/* Hero Section */
+/* -----------------------------
+   Hero Section
+-------------------------------- */
 .hero {
     position: relative;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
@@ -92,6 +110,7 @@ article {
 .hero h1 {
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -104,9 +123,9 @@ article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 16px;
     width: 70%;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Article Image */
@@ -118,30 +137,38 @@ article {
     border-radius: 4px;
 }
 
-/* History Section */
+/* -----------------------------
+   History Section
+-------------------------------- */
 .history {
     padding: 20px;
     margin-top: 24px;
 }
 
-/* Adventures Section */
+/* -----------------------------
+   Adventures Section
+-------------------------------- */
 .adventures {
     padding: 20px;
     margin-bottom: 24px;
 }
 
-/* Footer */
+/* -----------------------------
+   Footer
+-------------------------------- */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
     border-top: 1px solid #cccccc;
+    background-color: #ffffff;
 }
 
 /* Social Media Links */
 .socialmedia a {
     text-decoration: none;
+    border-bottom: none;
 }
 
 .socialmedia img {
