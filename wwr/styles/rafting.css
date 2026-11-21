@@ -254,6 +254,7 @@ main {
     font-weight: bold;
 }
 
+/* Responsive Google Maps iframe */
 .company-map iframe {
     display: block;
     width: 100%;
