@@ -1,6 +1,4 @@
-/* -----------------------------
-   Root Variables (Colors & Fonts)
--------------------------------- */
+/* Root Variables */
 :root {
     --primary-color: #0b7285;
     --secondary-color: #74c0fc;
@@ -11,22 +9,19 @@
     --body-font: Verdana, Geneva, sans-serif;
 }
 
-/* -----------------------------
-   Reset
--------------------------------- */
+/* Universal Selector Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* -----------------------------
-   Base Styles
--------------------------------- */
+/* Base Styles */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #ffffff;
+    line-height: 1.6;
 }
 
 header,
@@ -36,9 +31,7 @@ footer {
     margin: 0 auto;
 }
 
-/* -----------------------------
-   Header & Navigation
--------------------------------- */
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -48,8 +41,10 @@ header {
 
 header img {
     height: 80px;
+    width: auto;
 }
 
+/* Navigation */
 nav a {
     margin: 0 10px;
     text-decoration: none;
@@ -57,18 +52,23 @@ nav a {
     font-weight: bold;
 }
 
-/* -----------------------------
-   Headings
--------------------------------- */
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* -----------------------------
-   Spacing
--------------------------------- */
+h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* General Spacing */
 nav,
 p,
 section,
@@ -77,9 +77,7 @@ article {
     padding: 8px;
 }
 
-/* -----------------------------
-   Hero Section
--------------------------------- */
+/* Hero Section */
 .hero {
     position: relative;
 }
@@ -90,7 +88,7 @@ article {
     height: auto;
 }
 
-/* Hero title overlay */
+/* Hero Heading Overlay */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -101,7 +99,7 @@ article {
     color: #ffffff;
 }
 
-/* Article overlay */
+/* Hero Article Overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -111,30 +109,43 @@ article {
     width: 70%;
 }
 
-/* Article image */
+/* Article Image */
 .hero article img {
     float: right;
     width: 125px;
+    height: auto;
     margin-left: 16px;
     border-radius: 4px;
 }
 
-/* -----------------------------
-   Footer
--------------------------------- */
+/* History Section */
+.history {
+    padding: 20px;
+    margin-top: 24px;
+}
+
+/* Adventures Section */
+.adventures {
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
 }
 
+/* Social Media Links */
 .socialmedia a {
     text-decoration: none;
 }
 
 .socialmedia img {
     width: 32px;
+    height: 32px;
     margin-left: 8px;
 }
